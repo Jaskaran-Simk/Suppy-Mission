@@ -15,10 +15,7 @@ function setup() {
 	createCanvas(800, 700);
 	rectMode(CENTER);
 	
-	var pakageSprite_option = {
-        restitution : 0.2
 
-    }
 
 	packageSprite=createSprite(width/2, 80, 10,10);
 	packageSprite.addImage(packageIMG)
@@ -35,6 +32,11 @@ function setup() {
 
 	engine = Engine.create();
 	world = engine.world;
+	
+        var pakageSprite_option = {
+        restitution : 0.2
+
+    }
 
 	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:3, isStatic:true});
 	World.add(world, packageBody);
