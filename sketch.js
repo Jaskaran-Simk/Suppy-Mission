@@ -16,7 +16,7 @@ function setup() {
 	rectMode(CENTER);
 	
 	var pakageSprite_option = {
-        restitution : 1
+        restitution : 0.2
 
     }
 
