@@ -15,6 +15,10 @@ function setup() {
 	createCanvas(800, 700);
 	rectMode(CENTER);
 	
+	var pakageSprite_option = {
+        restitution : 1
+
+    }
 
 	packageSprite=createSprite(width/2, 80, 10,10);
 	packageSprite.addImage(packageIMG)
